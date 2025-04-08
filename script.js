@@ -127,6 +127,7 @@ function getBearerTokenFromLocalStorage() {
   if(localToken && localToken.length){
     return "Bearer " + localToken;
   }
+  localStorage.setItem('token','')
   return null;
 }
 
